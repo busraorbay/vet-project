@@ -1,0 +1,227 @@
+/* ============================================
+   CONTACT PAGE - LocationMap Uyumlu
+   ============================================ */
+
+.contact {
+  background: var(--bg);
+  padding-top: 80px;
+}
+
+/* Hero Section - About ile Aynı */
+.hero {
+  position: relative;
+  height: 350px;
+  overflow: hidden;
+}
+
+.heroImageWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.heroImageWrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(220, 20, 60, 0.3) 0%, rgba(255, 182, 193, 0.2) 100%);
+  z-index: 1;
+}
+
+.waveDivider {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  width: 100%;
+}
+
+.waveDivider svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.heroContent {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.heroContent h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 2px 4px 12px rgba(0, 0, 0, 0.4);
+  margin: 0;
+}
+
+/* Intro Section */
+.intro {
+  padding: 60px 20px 40px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.intro h2 {
+  font-size: 2.5rem;
+  color: var(--text);
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* Contact Info Cards - LocationMap Uyumlu */
+.contactInfo {
+  padding: 0 20px 60px;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.infoCard {
+  background: white;
+  padding: 35px 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(220, 20, 60, 0.1);
+  transition: all 0.3s ease;
+}
+
+.infoCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(220, 20, 60, 0.15);
+  border-color: var(--primary);
+}
+
+/* Card Icon - LocationMap ile Aynı */
+.cardIcon {
+  width: 55px;
+  height: 55px;
+  margin: 0 auto 20px;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardIcon svg {
+  width: 28px;
+  height: 28px;
+  color: white;
+}
+
+.infoCard h3 {
+  font-size: 1.2rem;
+  color: var(--text);
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.infoCard p {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.workingHours {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.emergency {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.infoCard a {
+  display: inline-block;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+  transition: color 0.3s ease;
+  margin-top: 5px;
+}
+
+.infoCard a:hover {
+  color: var(--primary-light);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .infoGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .heroContent h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 300px;
+  }
+
+  .heroContent {
+    left: 20px;
+  }
+
+  .heroContent h1 {
+    font-size: 2.5rem;
+  }
+
+  .intro {
+    padding: 40px 20px 30px;
+  }
+
+  .intro h2 {
+    font-size: 2rem;
+  }
+
+  .intro p {
+    font-size: 1rem;
+  }
+
+  .contactInfo {
+    padding: 0 20px 40px;
+  }
+
+  .infoGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .infoCard {
+    padding: 25px 20px;
+  }
+}

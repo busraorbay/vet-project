@@ -1,0 +1,223 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #FFFFFF 0%, #FFF5F5 100%);
+  padding: 120px 20px 80px;
+}
+
+.heroContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.heroText {
+  animation: slideInLeft 0.8s ease;
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  line-height: 1.2;
+  color: var(--text);
+  margin-bottom: 25px;
+}
+
+.highlight {
+  color: var(--primary);
+  display: block;
+}
+
+.heroSubtitle {
+  font-size: 1.2rem;
+  color: var(--text-light);
+  margin-bottom: 40px;
+  line-height: 1.8;
+}
+
+.heroButtons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.primaryBtn,
+.secondaryBtn {
+  padding: 16px 40px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.primaryBtn {
+  background: var(--primary);
+  color: white;
+  box-shadow: 0 5px 20px rgba(220, 20, 60, 0.3);
+}
+
+.primaryBtn:hover {
+  background: var(--primary-light);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(220, 20, 60, 0.4);
+}
+
+.secondaryBtn {
+  background: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+.secondaryBtn:hover {
+  background: var(--primary);
+  color: white;
+  transform: translateY(-3px);
+}
+
+.heroImage {
+  position: relative;
+  animation: slideInRight 0.8s ease;
+}
+
+.imageWrapper {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(220, 20, 60, 0.2);
+  border: 3px solid var(--primary);
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.floatingBadge {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  background: white;
+  padding: 20px 30px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 10px 30px rgba(220, 20, 60, 0.3);
+  animation: float 3s ease-in-out infinite;
+  border: 2px solid var(--primary);
+}
+
+.floatingBadge span {
+  font-size: 2.5rem;
+}
+
+.floatingBadge strong {
+  display: block;
+  font-size: 1.3rem;
+  color: var(--primary);
+  font-family: var(--font-playfair);
+}
+
+.floatingBadge small {
+  display: block;
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.decorativeShapes {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.shape1,
+.shape2,
+.shape3 {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.08;
+}
+
+.shape1 {
+  width: 400px;
+  height: 400px;
+  background: var(--primary);
+  top: -100px;
+  right: -100px;
+}
+
+.shape2 {
+  width: 300px;
+  height: 300px;
+  background: var(--primary-light);
+  bottom: -50px;
+  left: -50px;
+}
+
+.shape3 {
+  width: 200px;
+  height: 200px;
+  background: var(--secondary);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    padding: 100px 20px 60px;
+  }
+
+  .heroContent {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.1rem;
+  }
+
+  .heroButtons {
+    flex-direction: column;
+  }
+
+  .primaryBtn,
+  .secondaryBtn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .floatingBadge {
+    bottom: 20px;
+    left: 20px;
+    padding: 15px 20px;
+    gap: 10px;
+  }
+
+  .floatingBadge span {
+    font-size: 2rem;
+  }
+
+  .floatingBadge strong {
+    font-size: 1.1rem;
+  }
+}
