@@ -24,7 +24,7 @@ export default function TestimonialsSlider() {
       text: "Çocuklarınızı güvenli, işini bilen ve gerçekten hayvan sevgisi olan hekimlere teslim etmek istiyorsanız Onurcan hoca, Alperen hoca ve ekibi en doğru tercih. Bize her konuda çok destek oldular, kendilerine buradan da çok teşekkür ederim."
     },
     {
-      name: "Zeynep Arslan",
+      name: "Zeynep A.",
       rating: 5,
       text: "Kısırlaştırma operasyonu için Londra Veteriner'i tercih ettik. Operasyon öncesi ve sonrası detaylı bilgilendirme yaptılar."
     },

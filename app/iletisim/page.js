@@ -73,7 +73,7 @@ export default function Contact() {
               </div>
               <h3>Adresimiz</h3>
               <p>Bahçelievler, Adnan Kahveci Blv. No:85/B, 34000 Bahçelievler/İstanbul</p>
-              <a href="https://www.google.com/maps/dir//41.002140715576544,28.863871681832357" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.google.com/maps/dir//41.001985399999995,28.8639339" target="_blank" rel="noopener noreferrer">
                 Yol Tarifi Al →
               </a>
             </div>
