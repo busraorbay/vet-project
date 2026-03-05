@@ -4,7 +4,7 @@ import styles from '@/styles/LocationMap.module.css'
 export default function LocationMap() {
   return (
     <section className={styles.locationSection}>
-      <div className={styles.container}>
+      <div className="container">
         <div className={styles.sectionHeader}>
           <h2>Bize Ulaşın</h2>
           <p>Bahçelievler'de sizlere hizmet veriyoruz</p>
@@ -32,10 +32,10 @@ export default function LocationMap() {
             </svg>
             <div className={styles.locationText}>
               <h3>Londra Veteriner Kliniği</h3>
-              <p>Bahçelievler Mah, Bahçelievler, İstanbul</p>
+              <p>Bahçelievler, Adnan Kahveci Blv. No:85/B, 34000 Bahçelievler/İstanbul</p>
             </div>
             <a 
-              href="https://www.google.com/maps/dir//41.002140715576544,28.863871681832357" 
+              href="https://www.google.com/maps/dir//41.001985399999995,28.8639339" 
               target="_blank" 
               rel="noopener noreferrer"
               className={styles.directionBtn}

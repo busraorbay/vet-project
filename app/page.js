@@ -12,7 +12,7 @@ export default function Home() {
       
       {/* Hizmetlerimiz Bölümü - 3'lü Grid */}
       <section className={styles.servicesSection}>
-        <div className={styles.container}>
+        <div className="container">
           <div className={styles.sectionHeader}>
             <span className={styles.badge}>✨ Neler Yapıyoruz</span>
             <h2>Hizmetlerimiz</h2>
@@ -100,7 +100,7 @@ export default function Home() {
 
       {/* Neden Biz Bölümü */}
       <section className={styles.whyUsSection}>
-        <div className={styles.container}>
+        <div className="container">
           <div className={styles.whyUsContent}>
             <div className={styles.whyUsImage}>
               <Image 
@@ -118,7 +118,7 @@ export default function Home() {
             <div className={styles.whyUsText}>
               <span className={styles.badge}>💝 Neden Bizi Seçmelisiniz</span>
               <h2>Londra Veteriner Kliniği</h2>
-              <p>Kadıköy Bostancı'da uzman kadromuz ve sevgi dolu yaklaşımımızla dostlarınızın sağlığı için buradayız. Modern ekipmanlarımız ve deneyimli veteriner hekimlerimizle en iyi hizmeti sunuyoruz.</p>
+              <p>Bahçelievlerde uzman kadromuz ve sevgi dolu yaklaşımımızla dostlarınızın sağlığı için buradayız. Modern ekipmanlarımız ve deneyimli veteriner hekimlerimizle en iyi hizmeti sunuyoruz.</p>
               
               <div className={styles.featureGrid}>
                 <div className={styles.feature}>
@@ -184,7 +184,7 @@ export default function Home() {
 
 
   <section className={styles.ctaSection}>
-        <div className={styles.container}>
+        <div className="container">
           <div className={styles.ctaWrapper}>
             <div className={styles.ctaContent}>
               <h2>Can Dostlarınıza Gönülden Bağlıyız</h2>

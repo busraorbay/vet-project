@@ -154,8 +154,7 @@ export default function Hizmetlerimiz() {
       <section className={styles.hero}>
         <div className={styles.heroImageWrapper}>
           <Image 
-            src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=1600&q=80"
-            alt="Veteriner hizmetleri"
+src="https://images.unsplash.com/photo-1472491235688-bdc81a63246e?w=1200&q=80"            alt="Veteriner hizmetleri"
             fill
             style={{ objectFit: 'cover' }}
             priority
@@ -173,7 +172,7 @@ export default function Hizmetlerimiz() {
 
       {/* Intro Section */}
       <section className={styles.introSection}>
-        <div className={styles.container}>
+        <div className={"container"}>
           <h2>Dostlarımızın Sağlığı İçin Kapsamlı Hizmetler</h2>
           <p>"Londra Veteriner Kliniği olarak, modern tıbbi ekipmanlarımız ve uzman kadromuzla evcil dostlarınıza en iyi hizmeti sunuyoruz. Rutin kontrollerden acil müdahalelere, aşılamadan cerrahiye kadar tüm ihtiyaçlar için yanınızdayız."
 
@@ -183,7 +182,7 @@ export default function Hizmetlerimiz() {
 
       {/* Services Grid */}
       <section className={styles.servicesSection}>
-        <div className={styles.container}>
+        <div className={"container"}>
           <div className={styles.servicesGrid}>
             {services.map((service, index) => (
               <div key={index} className={styles.serviceCard}>
@@ -206,9 +205,10 @@ export default function Hizmetlerimiz() {
             ))}
           </div>
 
-     <LocationMap />
         </div>
       </section>
+           <LocationMap />
+
     </div>
   )
 }

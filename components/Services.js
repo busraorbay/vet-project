@@ -94,7 +94,7 @@ export default function ServicesPage() {
 
       {/* Services Grid */}
       <section className={styles.servicesSection}>
-        <div className={styles.container}>
+        <div className="container">
           <div className={styles.sectionIntro}>
             <h2>Neler Sunuyoruz?</h2>
             <p>Her türlü ihtiyaca yönelik geniş hizmet yelpazemiz ile yanınızdayız</p>
@@ -141,7 +141,7 @@ export default function ServicesPage() {
 
       {/* CTA Section */}
       <section className={styles.ctaSection}>
-        <div className={styles.container}>
+        <div className="container">
           <div className={styles.ctaContent}>
             <div className={styles.ctaText}>
               <h2>Sevimli Dostunuz İçin Randevu Alın</h2>

@@ -1,6 +1,6 @@
 .about {
   min-height: 100vh;
-  padding-top: 80px;
+  padding-top: 110px;
 }
 
 /* ============================================
@@ -372,6 +372,13 @@
 @media (max-width: 768px) {
   .hero {
     height: 300px;
+  }
+  .about{
+    padding-top: 0;
+  }
+  
+  .storyImage img{
+    width: 100%;
   }
 
   .heroContent {

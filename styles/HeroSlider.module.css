@@ -172,6 +172,7 @@
 @media (max-width: 768px) {
   .heroSlider {
     height: calc(100vh - 70px);
+    margin-top: 0;
   }
 
   .slideTitle {

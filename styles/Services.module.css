@@ -1,6 +1,6 @@
 .servicesPage {
   min-height: 100vh;
-  padding-top: 80px; /* Navigation yüksekliği kadar boşluk */
+  padding-top: 110px; /* Navigation yüksekliği kadar boşluk */
 }
 
 /* ============================================
@@ -315,6 +315,9 @@
 @media (max-width: 768px) {
   .hero {
     height: 300px;
+  }
+  .servicesPage{
+      padding-top: 0;
   }
 
   .heroContent {

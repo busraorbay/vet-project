@@ -8,13 +8,12 @@ export default function Contact() {
       {/* Hero Section */}
       <section className={styles.hero}>
         <div className={styles.heroImageWrapper}>
-          <Image 
-            src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?w=1600&q=80"
-            alt="İletişim"
-            fill
-            style={{ objectFit: 'cover' }}
-            priority
-          />
+         <Image 
+        src="https://images.unsplash.com/photo-1472491235688-bdc81a63246e?w=1200&q=80"            alt="Veteriner hizmetleri"
+                    fill
+                    style={{ objectFit: 'cover' }}
+                    priority
+                  />
         </div>
         <div className={styles.waveDivider}>
           <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -28,7 +27,7 @@ export default function Contact() {
 
       {/* Intro Section */}
       <section className={styles.intro}>
-        <div className={styles.container}>
+        <div className="container">
           <h2>Bizimle İletişime Geçin</h2>
           <p>Evcil dostlarınızın sağlığı için sorularınızı bize iletin. Uzman ekibimiz size yardımcı olmaktan mutluluk duyar.</p>
         </div>
@@ -36,7 +35,7 @@ export default function Contact() {
 
       {/* Contact Info Cards - LocationMap ile Uyumlu */}
       <section className={styles.contactInfo}>
-        <div className={styles.container}>
+        <div className="container">
           <div className={styles.infoGrid}>
             {/* Telefon Kartı */}
             <div className={styles.infoCard}>
@@ -47,7 +46,10 @@ export default function Contact() {
               </div>
               <h3>Telefon</h3>
               <p className={styles.emergency}>7/24 Acil Servis</p>
-              <a href="tel:+905551234567">+90 555 123 45 67</a>
+              <div className={styles.phoneFlex}>
+              <a href="tel:+905012789444">0501 278 94 44</a>
+                            <a href="tel:+902124415895">0212 441 58 95</a></div>
+
             </div>
 
             {/* Email Kartı */}
@@ -70,7 +72,7 @@ export default function Contact() {
                 </svg>
               </div>
               <h3>Adresimiz</h3>
-              <p>Bahçelievler Mah,<br/>Bahçelievler, İstanbul</p>
+              <p>Bahçelievler, Adnan Kahveci Blv. No:85/B, 34000 Bahçelievler/İstanbul</p>
               <a href="https://www.google.com/maps/dir//41.002140715576544,28.863871681832357" target="_blank" rel="noopener noreferrer">
                 Yol Tarifi Al →
               </a>

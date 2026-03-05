@@ -8,13 +8,12 @@ export default function About() {
       {/* Hero Section */}
       <section className={styles.hero}>
         <div className={styles.heroImageWrapper}>
-          <Image 
-            src="https://images.unsplash.com/photo-1576201836106-db1758fd1c97?w=1600&q=80"
-            alt="Hakkımızda"
-            fill
-            style={{ objectFit: 'cover' }}
-            priority
-          />
+         <Image 
+        src="https://images.unsplash.com/photo-1472491235688-bdc81a63246e?w=1200&q=80"            alt="Veteriner hizmetleri"
+                    fill
+                    style={{ objectFit: 'cover' }}
+                    priority
+                  />
         </div>
         <div className={styles.waveDivider}>
           <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -28,7 +27,7 @@ export default function About() {
 
       {/* Intro Section */}
       <section className={styles.intro}>
-        <div className={styles.container}>
+        <div className="container">
           <h2>Sevgi ve Uzmanlıkla Hizmet Ediyoruz</h2>
           <p>Londra Veteriner Kliniği olarak, evcil dostlarınızın sağlığı için modern tıbbi ekipmanlar ve deneyimli kadromuzla hizmet veriyoruz. Her hastamıza özel yaklaşım ve sevgi dolu bakım anlayışımızla yanınızdayız.</p>
         </div>
@@ -36,18 +35,19 @@ export default function About() {
 
       {/* Story Section */}
       <section className={styles.story}>
-        <div className={styles.container}>
+        <div className="container">
           <div className={styles.storyGrid}>
             <div className={styles.storyText}>
               <h2>Hikayemiz</h2>
               <p>
-                2022 yılında küçük bir klinik olarak başladığımız yolculuğumuzda, 
-                evcil dostlarımıza olan sevgimiz ve sağlıklarına olan bağlılığımız bizi her zaman ileri taşıdı.
+        2022'den bu yana Bahçelievler'de, evcil dostlarınızın sağlığı için profesyonel 
+veteriner hizmetleri sunuyoruz.
+
               </p>
               <p>
-                Bugün, modern ekipmanlarımız, uzman kadromuz ve geniş hizmet yelpazemizle 
-                Bahçelievler'in güvenilir veteriner kliniğiyiz. Her gün onlarca patili dostun 
-                sağlığını korumak ve tedavi etmek bizim için bir ayrıcalık.
+             Modern teknolojimiz, deneyimli veteriner kadromuz ve 7/24 destek anlayışımızla, 
+evcil dostlarınızın sağlığını korumak için yanınızdayız. Her gün, yüzlerce ailenin 
+güvenini kazanmanın ve patili dostlarının hayatına dokunmanın mutluluğunu yaşıyoruz.
               </p>
               <p>
                 Misyonumuz, evcil hayvanlarınıza en kaliteli veteriner hizmetini sunarak 
@@ -69,7 +69,7 @@ export default function About() {
 
       {/* Values Section */}
       <section className={styles.values}>
-        <div className={styles.container}>
+        <div className="container">
           <h2>Değerlerimiz</h2>
           <div className={styles.valuesGrid}>
             <div className={styles.valueCard}>
@@ -119,7 +119,7 @@ export default function About() {
 
       {/* Stats Section */}
       <section className={styles.stats}>
-        <div className={styles.container}>
+        <div className="container">
           <div className={styles.statsGrid}>
             <div className={styles.statCard}>
               <h3>5+</h3>

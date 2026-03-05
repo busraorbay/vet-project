@@ -11,7 +11,11 @@
   --white: #FFFFFF;
   --shadow: rgba(220, 20, 60, 0.1);
 }
-
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
 * {
   margin: 0;
   padding: 0;
@@ -52,7 +56,14 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--primary-light);
 }
-
+.swiperYorum .swiper-navigation-icon {
+  width: 50%;
+  height: 50%;
+  color: black;
+}
+.swiperYorum .swiper-slide{
+  height: auto;
+}
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -122,5 +133,31 @@ html {
   }
   50% {
     transform: scale(1.05);
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 80px;
+  }
+
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding-top: 70px;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    padding: 0 3rem;
   }
 }

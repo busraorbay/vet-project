@@ -10,7 +10,6 @@ export default function HeroSlider() {
     {
       image: 'https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=1920&q=80',
       title: 'Londra Veteriner Kliniği',
-//      subtitle: 'Kadıköy Bostancı\'da Veteriner Kliniği',
       buttonText: 'Hizmetlerimiz',
       buttonLink: '/hizmetlerimiz'
     },

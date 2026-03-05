@@ -138,7 +138,7 @@
 
 .contactList li {
   display: flex;
-  align-items: flex-start;
+  align-items:center;
   gap: 12px;
   margin-bottom: 18px;
   color: var(--text-light);
@@ -211,7 +211,9 @@
     padding: 40px 20px 0;
     margin-top: 60px;
   }
-
+.footerMobil{
+  display: none;
+}
   .footerGrid {
     grid-template-columns: 1fr;
     gap: 35px;
@@ -231,5 +233,54 @@
   .bottomLinks {
     flex-direction: column;
     gap: 12px;
+  }
+}
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 0;
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0; /* İkon küçülmesin */
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  color: #d32f2f; /* Logo renginiz */
+}
+
+.phoneNumbers {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.phoneLink {
+  color: #333333;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.phoneLink:hover {
+  color: #d32f2f;
+  text-decoration: underline;
+}
+
+/* Responsive için */
+@media (max-width: 480px) {
+  .phoneLink {
+    font-size: 0.9rem;
+  }
+  
+  .icon {
+    width: 20px;
+    height: 20px;
   }
 }

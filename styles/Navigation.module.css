@@ -16,13 +16,13 @@
   box-shadow: 0 5px 20px rgba(220, 20, 60, 0.15);
 }
 
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 40px;
+.headerContainer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
 }
 
 .logo {
@@ -108,6 +108,7 @@
   border: none;
   cursor: pointer;
   padding: 5px;
+  z-index: 1001;
 }
 
 .mobileToggle span {
@@ -116,6 +117,21 @@
   background: var(--primary);
   border-radius: 2px;
   transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+/* Hamburger'dan X'e dönüşüm animasyonu */
+.mobileToggle.open span:nth-child(1) {
+  transform: rotate(45deg) translate(7px, 7px);
+}
+
+.mobileToggle.open span:nth-child(2) {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.mobileToggle.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
 }
 
 @media (max-width: 768px) {

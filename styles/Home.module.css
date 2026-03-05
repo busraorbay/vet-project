@@ -483,6 +483,9 @@
     font-size: 2.2rem;
   }
 
+  .whyUsImage img{
+    width: 100%;
+  }
   .servicesGrid {
     grid-template-columns: 1fr;
   }

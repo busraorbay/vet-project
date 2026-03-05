@@ -18,7 +18,7 @@ export default function Navigation() {
 
   return (
     <nav className={`${styles.nav} ${isScrolled ? styles.scrolled : ''}`}>
-      <div className={styles.container}>
+      <div className={`container ${styles.headerContainer}`}>
         <Link href="/" className={styles.logo}>
           <Image 
             src="/images/londra-logo.jpg" 
@@ -31,8 +31,9 @@ export default function Navigation() {
         </Link>
 
         <button 
-          className={styles.mobileToggle}
+          className={`${styles.mobileToggle} ${isMobileMenuOpen ? styles.open : ''}`}
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          aria-label="Menü"
         >
           <span></span>
           <span></span>
@@ -40,10 +41,10 @@ export default function Navigation() {
         </button>
 
         <ul className={`${styles.navLinks} ${isMobileMenuOpen ? styles.active : ''}`}>
-          <li><Link href="/">Ana Sayfa</Link></li>
-          <li><Link href="/hakkimizda">Hakkımızda</Link></li>
-          <li><Link href="/hizmetlerimiz">Hizmetlerimiz</Link></li>
-          <li><Link href="/iletisim">İletişim</Link></li>
+          <li><Link href="/" onClick={() => setIsMobileMenuOpen(false)}>Ana Sayfa</Link></li>
+          <li><Link href="/hakkimizda" onClick={() => setIsMobileMenuOpen(false)}>Hakkımızda</Link></li>
+          <li><Link href="/hizmetlerimiz" onClick={() => setIsMobileMenuOpen(false)}>Hizmetlerimiz</Link></li>
+          <li><Link href="/iletisim" onClick={() => setIsMobileMenuOpen(false)}>İletişim</Link></li>
         </ul>
       </div>
     </nav>
