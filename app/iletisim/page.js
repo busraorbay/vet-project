@@ -61,7 +61,7 @@ export default function Contact() {
               </div>
               <h3>E-posta</h3>
               <p>Sorularınız için</p>
-              <a href="mailto:info@londravet.com">info@londravet.com</a>
+              <a href="mailto:info@londraveteriner.com">info@londraveteriner.com</a>
             </div>
 
             {/* Adres Kartı */}
